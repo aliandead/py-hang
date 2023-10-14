@@ -4,8 +4,12 @@ from random import randint
 
 clear()
 
-words = open("words.txt", "r").read()\
-                              .split("\n")
+stream = open("words.txt", "r")
+
+words = stream.read()\
+              .split("\n")
+
+stream.close()
 
 sel_word = words[randint(0, len(words) - 1)].upper()
 game_state = "".ljust(len(sel_word), "_")
