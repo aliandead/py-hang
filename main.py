@@ -18,7 +18,7 @@ stream.close()
 sel_word = words[randint(0, len(words) - 1)].upper()
 
 # Pads the string with underscores
-# - It will allow us to easily replace them with the letters using a same index as sel_word AND game_state will have the same length -
+# - It will allow us to easily replace these underscores with the correct letters using a same index as sel_word AND game_state will have the same length -
 game_state = "".ljust(len(sel_word), "_")
 
 # Initializes the variables
