@@ -1,11 +1,11 @@
-from utils import clear
+from utils import *
 from constants import *
 from random import randint
 
 clear()
 
 words = open("words.txt", "r").read()\
-                              .split('\n')
+                              .split("\n")
 
 sel_word = words[randint(0, len(words) - 1)].upper()
 game_state = "".ljust(len(sel_word), "_")
