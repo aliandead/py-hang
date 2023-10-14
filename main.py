@@ -18,7 +18,7 @@ curr_player = 0
 mistake_count = 0
 
 player_count = int(input("Number of players: "))
-assert player_count > GAME_MIN_PLAYERS and player_count <= GAME_MAX_PLAYERS, f"Player count must be between {GAME_MIN_PLAYERS} and {GAME_MAX_PLAYERS}"
+assert player_count >= GAME_MIN_PLAYERS and player_count <= GAME_MAX_PLAYERS, f"Player count must be between {GAME_MIN_PLAYERS} and {GAME_MAX_PLAYERS}"
 
 def turn():
     global mistake_count
@@ -51,7 +51,7 @@ def find_char_indices(target_char):
 def win_message():
     clear()
     print("The word is", sel_word)
-    print("Congrats on finding the word!")
+    print(f"Congrats Player[{curr_player}] on finding the word!")
     exit()
 
 def lose_message():
