@@ -1,3 +1,4 @@
+# Game constants
 GAME_MAX_MISTAKES = 8
 GAME_MIN_PLAYERS  = 1
 GAME_MAX_PLAYERS  = 99
